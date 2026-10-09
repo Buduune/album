@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Album</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="masthead">
+    <p class="eyebrow" id="album-count"></p>
+    <h1 id="album-title"></h1>
+    <p class="subtitle" id="album-subtitle"></p>
+  </header>
+
+  <main>
+    <section class="grid" id="grid" aria-label="Photos"></section>
+  </main>
+
+  <footer class="colophon" id="album-footer"></footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer" tabindex="-1">
+    <button class="lb-btn lb-close" id="lb-close" aria-label="Close">&times;</button>
+    <button class="lb-btn lb-prev" id="lb-prev" aria-label="Previous photo">&#8249;</button>
+    <figure class="lb-figure">
+      <img id="lb-img" alt="">
+      <figcaption>
+        <span class="lb-counter" id="lb-counter"></span>
+        <span id="lb-caption"></span>
+      </figcaption>
+    </figure>
+    <button class="lb-btn lb-next" id="lb-next" aria-label="Next photo">&#8250;</button>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
