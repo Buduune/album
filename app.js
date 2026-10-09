@@ -5,7 +5,7 @@ const ALBUM = {
   subtitle: "Seven moments worth keeping",
   footer: "",
   photos: [
-    { src: "photos/1.jpg", caption: "" },
+    { src: "photos/1.jpg", caption: "", focus: "50% 72%" },
     { src: "photos/2.jpg", caption: "" },
     { src: "photos/3.jpg", caption: "" },
     { src: "photos/4.jpg", caption: "" },
